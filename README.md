@@ -3,6 +3,5 @@
 
 ###HTML pages for Flinders College Weblaunch
 
-Added to this revision
-* leaf background
+Going to try to build in bootstrap, but with old images.
 
