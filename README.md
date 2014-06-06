@@ -3,5 +3,5 @@
 
 ###HTML pages for Flinders College Weblaunch
 
-Going to try to build in bootstrap, but with old images.
+This fork uses the bootstrap theme, but with the original colored icons used in my original launch pages solution.
 
