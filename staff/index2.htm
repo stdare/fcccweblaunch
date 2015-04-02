@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="moodle, ourFlinders, weblaunch, staff, LMS, Flinders College, FCCC, Flinders Christian">
+    <meta name="keywords" content="moodle, ourFlinders, weblaunch, staff">
     <meta name="author" content="dstanley">
 
 <link rel="icon" 
@@ -30,18 +30,23 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="../js/modal.js"></script>
   </head>
 
 <body style="background-image:url(../images/Bottom_texture.jpg);background-repeat:no-repeat;">
 <!-- trial to use background in div.  Add div to tail of file 
 <div style="background-image:url(../images/Bottom_texture.jpg) ;background-repeat:no-repeat;">
 -->
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/modal.js"></script>
+    
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="inactive" ><a href="http://launch.flinders.vic.edu.au" title="Return to launch page">Weblaunch Home</a></li>   
-		<li class="active" ><a href="http://www.flinders.vic.edu.au" title="Flinders Public Website">FCCC website</a></li>
-		</ul>
+          <li class="inactive" ><a href="http://launch.flinders.vic.edu.au">Weblaunch Home</a></li>   
+        </ul>
         <h3 class="text-muted">flinders christian community college</h3>
       </div>
 
@@ -64,20 +69,58 @@
 				<div class="col-sm-3" align="center" >
           <p><a href="http://www.flinders.vic.edu.au/staff.php"><img style="border: 0px solid ;" alt="webmail" title="Access your Webmail account" src="../images/webmail.jpg"></a></p>
 		</div>
-		<div class="col-sm-3" align="center" >
-          <p><a href="helpdesk.htm"><img style="border: 0px solid ;" alt="helpdesk" title="Get Help" src="../images/helpdesk.jpg"></a></p>
+		<div class="col-sm-3" align="center">
+          <!-- Button trigger modal -->
+<button style="border: 0px solid;" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#myModal">
+<img style="border: 0px solid ;" alt="helpdesk" title="Get Help" src="../images/help.jpg"></a>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" 
+               aria-hidden="true">×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Help Options
+            </h4>
+         </div>
+         <div class="modal-body">
+		<div class="links">
+        <div class="col-sm-6" align="center" >
+          <h5><strong>Flinders Institute - online tutorials</strong></h5>
+          <p><a href="http://institute.flinders.vic.edu.au"> <img style="border: 0px solid ; width: 125px; height: 125px;" alt="FlindersInstitute" title="View online tutorials" src="../images/fli.png" align="middle"></a></p>
+          </div>
+        <div class="col-sm-6" align= "center" >
+          <h5><strong>Helpdesk Ticket System</strong></h5>
+          <p><a href="http://helpdesk.flinders.vic.edu.au"><img style="border: 0px solid ; width: 125px; height: 125px;" alt="Helpdesk" title="Post a ticket on Helpdesk" src="../images/helpdesk.png" align="middle"></a></p>
+		</div>
+		</div>
+         </div>
+         <div class="modal-footer">
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script>
+   $(function () { $('#HelpModal').modal({
+      keyboard: true
+   })});
+</script>
 		</div>
 		<div class="col-sm-3" align="center" >
           <p><a href="http://portfolio.flinders.vic.edu.au/"><img style="border: 0px solid ;" alt="mahara" title="Mahara ePortfolios" src="../images/mahara.jpg"></a></p>
 		</div>
 		<div class="col-sm-3" align="center" >
-          <p><a href="http://byod.flinders.vic.edu.au"><img style="border: 0px solid ;" alt="byod" title="Connect Your Own Device" src="../images/byod.png"></a></p>
+          <p><a href="http://www.flinders.vic.edu.au"><img style="border: 0px solid ;" alt="fccc_web" title="Flinders Public Website" src="../images/fccc_web.jpg"></a></p>
 		</div>
       </div>
 
-      <div class="footer" align="center" >
-	 <p>Need to change your Flinders password? <a href="http://www.helpdesk.flinders.vic.edu.au/password" target="_blank" title="Help me change my password">Click here</a></p>
-	 <p><img src="../images/fccc_icon_tiny.jpg" width="50px" height="49px">  Providing excellent Christian education for as many students as possible.</p>
+      <div class="footer" >
+	  <p><img src="../images/fccc_icon_tiny.jpg" width="50px" height="49px">  Providing excellent Christian education for as many students as possible.</p>
 	  </div>
     </div> <!-- /container -->
 	<!-- </div> --background image -->
